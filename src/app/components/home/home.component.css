@@ -1,0 +1,17 @@
+section {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits {
+    background-image: url(../../../assets/gotcredits.gif);
+    height: 250px;
+    width: 500px;
+    margin: 21px;
+    background-blend-mode: luminosity;
+    border: 3px #939DA2 solid;
+    border-radius: 25px;
+
+}

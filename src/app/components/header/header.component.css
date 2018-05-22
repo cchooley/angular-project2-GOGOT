@@ -1,0 +1,36 @@
+
+
+.innerHead {
+    text-align: center;
+    padding: 1px;
+    width: 40%;
+    border-radius: 25px;
+    margin: 6px;
+    border: 3px #0A1C27 solid;
+    background-color: #939DA2;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px double #939DA2;
+    background-image: url('../../../assets/brokenwall.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+h1 {
+    text-shadow: 2px 1px #607E8A;
+    font-size: 40px;
+    color: #0A1C27;
+    background: inherit;
+    margin-bottom: 2px;
+}
+
+h2 {
+    margin-top: 1px;
+    text-shadow: 0.5px 0.5px #607E8A;
+    background: inherit;
+    color: #0A1C27;
+}

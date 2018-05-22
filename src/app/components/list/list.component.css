@@ -1,0 +1,157 @@
+section {
+    margin: 10px;
+    display: grid;
+}
+
+.identify, select, .choose, .confirm {
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.identify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 10px;
+}
+
+button, select {
+    margin: 2px;
+    background-color: #939DA2;
+    color: #0A1C27;
+    font-size: 14px;
+    border: 1px white solid;
+}
+
+button:focus, select:focus {
+    outline: 0;
+}
+
+button:click {
+    background-color: #0A1C27;
+    background: #939DA2;
+}
+
+.lastButtons {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.credits {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-image: url(../../../assets/gotcredits.gif);
+    height: 250px;
+    width: 500px;
+    margin: 30px;
+    background-blend-mode: luminosity;
+    border: 3px #939DA2 solid;
+    border-radius: 25px;
+
+}
+
+.getChar {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.emph {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.canPick {
+    color: green;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.cantPick {
+    color: red;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+select {
+    width: 150px;
+}
+
+.selectScreen {
+    margin: 15px;
+}
+
+.charCard {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 6px;
+    background-color: inherit;
+}
+
+.charImg {
+    height: 300px;
+    width: 200px;
+    border: 3px #939DA2 solid;
+    background-blend-mode: luminosity
+}
+
+.confirmOne {
+    border: 3px #939DA2 solid;
+    width: 60%;
+    padding: 8px;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmOne, .innerConfirm {
+    background-image: url(../../../assets/borderpattern.jpg);
+    background-blend-mode: luminosity
+}
+.selectOne {
+    margin-top: 8px;
+    padding: 6px;
+    font-size: 16px
+}
+
+.stats {
+    border: 1px #939DA2 solid;
+    padding: 12px
+}
+
+.innerConfirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border: 1px #939DA2 solid;
+    padding: 2px;
+}
+
+.certain {
+    display: flex;
+    justify-content: space-between;
+    background: inherit;
+    background-blend-mode: luminosity
+}
+
+.certain {
+    margin-top: 3px;
+}
+
+.finalMsg {
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,33 @@
+aside {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-radius: 25px;
+    border: 3px #939DA2 solid;
+    background-color: #3C6361;
+    margin: 20px;
+}
+
+h3 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: inherit;
+    color: #0A1C27
+}
+
+ol {
+    background-color: inherit;
+    list-style: none;
+    padding-left: 0
+}
+
+li {
+    background-color: inherit;
+    color: #0A1C27
+}
+
+small {
+    font-style: italic;
+    background-color: inherit
+}

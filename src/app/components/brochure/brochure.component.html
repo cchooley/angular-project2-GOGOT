@@ -1,0 +1,50 @@
+<section>
+  <div>
+  <span class="textEmph">GOGOT is simple: you win, or you die.</span>
+  <p>This app is demos a crucial aspect of
+  a larger, long-term project called GOGOT that I am working on another colleague. We came up with the idea for this game before
+  Game of Thrones’ fifth season that kind of caught fire - essentially formatting the “Survivor Pool” NFL game to apply to HBO's Game of
+  Thrones.</p> 
+  <p>In the traditional Survivor Pool game, a group of players get together, throw a nominal entry fee into a
+  pot, and spend the NFL season picking different teams to win their weekly matchup. Of course, constraints are attached - you can only
+  pick a team once over the course of a season (so if you pick Denver to win their week 1 game, and they do, you can’t pick
+  them again for the rest of the year), a given team can only be picked a set amount of times per week and then they are unavailable
+  (so if, in a given week, Denver is picked by 4 people in a 24-person league, the other 20 cannot pick Denver that week),
+  and so forth. And, as the name implies, if the team you pick loses, then you are eliminated. The player(s) in the group that
+  either survive through the 17-week season, or are the last to be eliminated, win the pot.</p>
+  <p><span class="textEmph">In GOGOT, each player picks a single character to survive the week's episode.</span></p>
+  <p>My friend and I realized that Game
+  of Thrones could actually be an arena that this formula could work in. It’s a cultural phenomenon that lots of people follow,
+  if not obsess over - so interest would likely be broad (leading to a large buy-in pot that would help further drive entries).
+  Like the NFL, it happens week-by-week, so it likely wouldn’t monopolize anyone’s time too drastically. And, just as lots
+  of teams lose in the NFL every week, so too do lots of characters perish over the course of a Game of Thrones season. We
+  tried our model out in Season 6 and felt it worked well enough to demo in earnest with a group of about three dozen friends
+  in Season 7.</p>
+  <p>We managed the game through weekly Facebook event posts, where players would pick their characters in a message
+  thread. And as you might imagine, keeping track of everyone’s picks and just maintaining a minimum standard of organization
+  was a huge chore. So why not create an app that would do everything we needed for us?</p>
+  <p>
+    <span class="textEmph">The GOGOT app, including this demo version, is chiefly designed to administer and record weekly selections.</span>
+  </p>
+  <p>This would be something that could identify a player,
+  present them with the eligible characters for selection, log their pick and display the week’s selections. All in an efficient
+  and stylish way.</p>
+  <p>Players can identify themselves and then choose from a list of the
+  currently-eligible (ie, living) characters in the show. Each option in the selection box merges a get request to an API of
+  Ice and Fire with private, proprietary information about the character (most crucially, of course, is how many times they
+  have been picked). If the character has been picked less than the maximum amount of weekly selections (set, in this demo
+  case, to two), then they may be selected. If not, they can’t. A successful selection will be displayed in the selection component
+  to the right, with the player, character, number of times picked, and selection time all displayed for maximum transparency.</p>
+  <p>My objective for this project was to use Angular to code the aforementioned game logic into a workable demo, and in those
+  terms it functions exactly how I’d like. 
+  <p><span class="textEmph">What you see now is by no means the fully-realized product.</span></p>
+  <p>A final, truly-playable version will require components that will create
+  and store player accounts, store weekly pick information for characters and players alike, and conditionally open and close
+  the weekly selections at the correct times (last season the pick period typically ran from Tuesday or Wednesday afternoon
+  through the Sunday evening start time of that week’s episode). I’d also love to add a message board for trash talk and some
+  other peripheral aspects that players can geek out on - episode info, memes, quotes, etc. But that’s all further down the
+  road. For right now, here is an app that demos the most important part of our game - selecting characters - and ostensibly
+  meets all of the requirements of the P2 project. Enjoy!</p>
+  <p>- Conor Hooley</p>
+  </div>
+</section>

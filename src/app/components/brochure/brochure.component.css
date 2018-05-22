@@ -1,0 +1,25 @@
+section {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 21px;
+}
+
+div {
+    padding: 12px;
+    background-color: rgb(70, 97, 105);
+    color: #0A1C27;
+    border-radius: 25px;
+    border: 3px #939DA2 solid;
+}
+
+.textEmph, p {
+    background-color: inherit;
+    color: inherit
+}
+
+.textEmph {
+    font-size: 1.5em;
+    font-weight: 500
+}

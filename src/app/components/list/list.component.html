@@ -1,0 +1,57 @@
+<section>
+  <div *ngIf="!clear">
+    <div *ngIf="!player" class="identify">
+      <h3 class="emph">Identify yourself:</h3>
+      <select [(ngModel)]="model.pickedBy" (change)="button = !button">
+        <br><option *ngFor="let player of players">
+          {{player.name}}
+        </option>
+      </select>
+      <button *ngIf="button" (click)="player=!player" (click)="log()">Select</button>
+    </div>
+    <h3 class="identify" *ngIf="player && !trial">Welcome, <span class="emph">{{model.pickedBy}}.</span></h3>
+    <div *ngIf="player">
+      <div class="choose">
+        <h3>Select your character.</h3>
+        <select [(ngModel)]="model.name" (change)=displayChar($event)>
+          <option *ngFor="let character of characters">{{character.name}}</option>
+        </select>
+      </div>
+      <div class="selectScreen">
+        <div class="charCard" *ngFor="let character of charData"> 
+          <div><img src="{{character.img}}" class="charImg"></div>
+          <div class="confirmOne" *ngIf="!eligible">
+            <div class="stats">
+              <div>Name: <span class="emph">{{character.name}}</span></div>
+              <div>AKA: <span class="emph">{{character.aliases.join(', ')}}</span></div>
+              <div *ngIf="character.titles.length > 0">Titles: <span class="emph">{{character.titles.join(', ')}}</span></div>
+              <div>Born: <span class="emph">{{character.born}}</span></div>
+              <div>Gender: <span class="emph">{{character.gender}}</span></div>
+              <div>Played by: <span class="emph">{{character.playedBy}}</span>
+              </div>
+              <div *ngIf="character.timesPicked < 2">Times Picked: <span class="canPick">{{character.timesPicked}}</span>
+              </div>
+              <div *ngIf="character.timesPicked >=2">Times Picked: <span class="cantPick">{{character.timesPicked}}</span></div>
+            </div>
+            <button *ngIf="character.timesPicked < 2" (click)="eligible = !eligible" class="selectOne">Select {{character.name}}</button>
+          </div>
+          <div class="confirmOne" *ngIf="eligible && character.timesPicked < 2 ">
+            <div class="stats">
+            Are you
+            <span class="emph">CERTAIN</span> you want to select
+            <span class="emph">{{character.name}}</span>?
+            </div>
+            <div class="certain" *ngIf="!trial && character.timesPicked <=2">
+              <button (click)=postPick(model.name) click=addPick() (click)="clear = !clear">I am certain</button>
+              <button (click)="eligible = !eligible">I am uncertain</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="finalMsg" *ngIf="clear">Your pick has been registered.</div>
+</section>
+
+
+

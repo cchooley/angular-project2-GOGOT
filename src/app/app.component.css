@@ -1,0 +1,32 @@
+main {
+    display: grid;
+    grid-template-columns: 0% 66% 33%;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    border-bottom: 3px #939DA2 double;
+    padding: 7px;
+    background-color: rgb(70, 97, 105);
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 300px;
+    background-color: inherit;
+    color: #0A1C27;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #A6A7AC
+}
+
+router-outlet {
+    opacity: .5;
+}
+app-selected {
+}

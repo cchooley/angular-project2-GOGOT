@@ -1,0 +1,6 @@
+<aside>
+  <h3>This Week's Picks</h3>
+  <ol *ngFor="let pick of picks">
+    <li>{{pick.pickedBy}} selected {{pick.name}} ({{pick.timesPicked}}) <br><small>({{pick.pickedAt}})</small></li>
+  </ol>
+</aside>
