@@ -54,8 +54,6 @@ export class ListComponent implements OnInit {
       this.selectedChar = thisChar;
       this.merge(this.selectedChar, this.availChar)
     })
-    console.log(this.model)
-    console.log(this.availChar)
   }
 
   postPick(player) {
@@ -81,15 +79,8 @@ export class ListComponent implements OnInit {
     })
   }
 
-  log() {
-    console.log(this.model)
-  }
-
   addPick() {
     this.character.timesPicked +1
-    console.log(this.character)
-    console.log(this.model)
-    console.log(this.charData)
   }
 
   merge(data1, data2) {

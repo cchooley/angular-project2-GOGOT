@@ -7,9 +7,9 @@
           {{player.name}}
         </option>
       </select>
-      <button *ngIf="button" (click)="player=!player" (click)="log()">Select</button>
+      <button *ngIf="button" (click)="player=!player">Select</button>
     </div>
-    <h3 class="identify" *ngIf="player && !trial">Welcome, <span class="emph">{{model.pickedBy}}.</span></h3>
+    <h3 class="identify" *ngIf="player">Welcome, <span class="emph">{{model.pickedBy}}.</span></h3>
     <div *ngIf="player">
       <div class="choose">
         <h3>Select your character.</h3>
@@ -41,7 +41,7 @@
             <span class="emph">CERTAIN</span> you want to select
             <span class="emph">{{character.name}}</span>?
             </div>
-            <div class="certain" *ngIf="!trial && character.timesPicked <=2">
+            <div class="certain" *ngIf="character.timesPicked <=2">
               <button (click)=postPick(model.name) click=addPick() (click)="clear = !clear">I am certain</button>
               <button (click)="eligible = !eligible">I am uncertain</button>
             </div>
@@ -50,7 +50,6 @@
       </div>
     </div>
   </div>
-  <div class="finalMsg" *ngIf="clear">Your pick has been registered.</div>
 </section>
 
 

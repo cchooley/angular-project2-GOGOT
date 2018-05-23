@@ -3,11 +3,11 @@ section {
     display: grid;
 }
 
-.identify, select, .choose, .confirm {
+.identify, .choose {
     font-weight: bold;
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin: 11px;
 }
 
 .identify {
@@ -15,11 +15,10 @@ section {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top: 10px;
 }
 
 button, select {
-    margin: 2px;
+    margin: 3px;
     background-color: #939DA2;
     color: #0A1C27;
     font-size: 14px;
@@ -27,12 +26,12 @@ button, select {
 }
 
 button:focus, select:focus {
-    outline: 0;
+    outline: none;
 }
 
-button:click {
+button:focus {
     background-color: #0A1C27;
-    background: #939DA2;
+    color: #939DA2;
 }
 
 .lastButtons {
@@ -43,19 +42,6 @@ button:click {
     padding: 5px;
 }
 
-.credits {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    background-image: url(../../../assets/gotcredits.gif);
-    height: 250px;
-    width: 500px;
-    margin: 30px;
-    background-blend-mode: luminosity;
-    border: 3px #939DA2 solid;
-    border-radius: 25px;
-
-}
 
 .getChar {
     display: flex;

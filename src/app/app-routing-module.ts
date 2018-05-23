@@ -6,6 +6,7 @@ import { ListComponent } from '../app/components/list/list.component';
 import { BrochureComponent } from '../app/components/brochure/brochure.component';
 
 const appRoutes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'brochure', component: BrochureComponent },
     { path: 'list', component: ListComponent }
