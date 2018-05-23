@@ -27,6 +27,8 @@ export class ListComponent implements OnInit {
   availChar: Array<Character> = []
   charData: Array<Character> = []
 
+  clear: Boolean
+
   model: Character = {
     pickedBy: '',
     name: '',
