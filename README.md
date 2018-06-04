@@ -12,3 +12,5 @@ Your app should have end-to-end tests
 Deploy your app
 Submission
 Add a link to your code here (https://github.com/cchooley/angular-project2-GOGOT/tree/master/src), and your deployed site here: https://gogot-33035.firebaseapp.com.
+
+*** REUPLOAD NOTE - Brooks, this is your reminder that we ran my Cypress tests last Friday, they all passed, and you ok'd the pass contingent on me reuploading this with this note :) ***
