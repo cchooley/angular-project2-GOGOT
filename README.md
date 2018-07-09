@@ -1,16 +1,27 @@
-Galvanize Web App
-For this project, you will build a light application that reads data, has end-to-end testing, and integrates with an API. The topic is up to you, so pick a project that speaks to your interests.
+# GOGOT - The Game of Game of Thrones
 
-Instructions
-You should have a brochure page that has information about what your app does and who it's for.
-Your app should make a GET request to an external API
-Your app should also pull from a second source of data. This can be another API, another endpoint on the same API, or from a local .json file
-You need to write some data transformation that combines the two objects in a meaningful way
-The resulting data should be dynamically added to the page
-You should allow a user to change the API end point. For example, get data about a specific movie, weather for a specific zip code, etc
-Your app should have end-to-end tests
-Deploy your app
-Submission
-Add a link to your code here (https://github.com/cchooley/angular-project2-GOGOT/tree/master/src), and your deployed site here: https://gogot-33035.firebaseapp.com.
+![site image](gogot.jpg)
 
-*** REUPLOAD NOTE - Brooks, this is your reminder that we ran my Cypress tests last Friday, they all passed, and you ok'd the pass contingent on me reuploading this with this note :) ***
+This app is demos a crucial aspect of a larger, long-term project called GOGOT that I am working on another colleague. We came up with the idea for this game before Game of Thrones’ fifth season that kind of caught fire - essentially formatting the “Survivor Pool” NFL game to apply to HBO's Game of Thrones.
+
+The GOGOT app, including this demo version, is chiefly designed to administer and record weekly selections. This would be something that could identify a player, present them with the eligible characters for selection, log their pick and display the week’s selections. All in an efficient and stylish way.
+
+## Installation
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. To get the Angular CLI, run `npm install -g @angular/cli`
+
+Run `npm install` to install dependencies.
+
+## Serving
+
+Run `ng serve` for a dev client server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Tech Used
+- Angular 6
+- TypeScript
+- Firebase
+- CSS
+
+## Contact info
+- cchooley@gmail.com
+- https://www.linkedin.com/in/conor-hooley/
