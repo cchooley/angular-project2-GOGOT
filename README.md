@@ -1,6 +1,6 @@
 # GOGOT - The Game of Game of Thrones
 
-![site image](gogot.jpg)
+![site image](gogot.png)
 
 This app is demos a crucial aspect of a larger, long-term project called GOGOT that I am working on another colleague. We came up with the idea for this game before Game of Thrones’ fifth season that kind of caught fire - essentially formatting the “Survivor Pool” NFL game to apply to HBO's Game of Thrones.
 
