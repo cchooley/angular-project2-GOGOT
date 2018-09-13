@@ -1,10 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { HttpService } from '../../services/http.service';
 import { SelectionService } from '../../services/selection.service';
 
 import { Character } from '../../models/character';
-import { AvailChar } from '../../models/avail-char';
 import { PLAYERS } from '../../models/players';
 import { Player } from '../../models/player';
 import { CHARACTERS } from '../../models/characters';
@@ -47,7 +46,11 @@ export class ListComponent implements OnInit {
     private _infoService: InfoService
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this._httpService.test().subscribe(characters => {
+      console.log(characters)
+    })
+  }
 
   displayChar(event: any) {
     this._infoService.showChar(event.target.value)
